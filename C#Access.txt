@@ -1,0 +1,36 @@
+/*
+ 	データベースへの接続する
+	データベースに接続するときはデータプロバイダーのConnectionクラスを使います。
+	接続でポイントとなるのはデータプロバイダーと接続文字列です。
+
+	データプロバイダーは接続するデータソースによって決めます。
+	接続文字列は接続するデータソースを特定、特殊なオープンするときに使用します。
+	特定というのはデータベースの配置位置情報、データベース名、IDやパスワードやファイルパス等です。
+
+	サンプルコードはSQLSerer/PostgerSQL/Accexx/Excel/CSVの接続方法を紹介しています。
+
+ */
+using System;
+using System.Collections.Generic;
+usgin System.Text;
+using Ssytem.Data.SqlClient;
+
+namespace Sample
+{
+	public class ConnectionString
+	{
+		public const string	SQLServer	= @"Data Source=PC\SQLEXPRESS1;Initial Catalog=TestDatabase;User Id=sa;Password=sa;";
+		public const string	PostgreSQL	= @"Server=localhost;Port=5432;User Id=admin;Password=admin;Database=TestDatabase;";
+		public const string	Access		= @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\db1.mdb";
+		public const string	Excel		= @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\test.xls;Extended Properties=Excel 8.0;";
+		public const string	CSV			= "Provider=Microsoft.Jet.OLEDDB.4.0;Data Source=C:\\;Extended Properties=\"text;HDR=No;FMT=Delimited\"";
+	}
+
+	public class ado
+	{
+		SqlConnection conn = new SqlConnection();
+		conn.ConnectionString = ConnectionString.SqlServer;
+		conn.Open();
+		conn.Close();
+	}
+}

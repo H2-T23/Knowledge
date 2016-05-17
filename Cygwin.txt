@@ -1,0 +1,82 @@
+Cygwin
+
+Cygwin User's Guide
+
+	The Cygwin User's Guide is now available in several formats:
+
+	Several HTML files, with Table of Contents
+	One large compressed HTML file
+	One PDF file
+
+	Alternatively, you may jump to a section that interests you:
+
+	Quick Start Guide for those more experienced with Windows
+	Quick Start Guide for those more experienced with UNIX
+	Help with setting up Cygwin with setup.exe
+
+
+Quick Start Guide for those more experienced with Windows.
+
+	If you are new to the world of UNIX, you may find it difficult to understand at first.
+	This guide is not meant to be comprehensive, so we recommend that you use the many available
+	Internet resources to become acquainted with UNIX basics(search for "UNIX basics" or "UNIX tutorial").
+
+	To install a basic Cygwin enviroment, run the setup.exe program and click Next at 
+	each page. The default setting are correct for most users. If you want to know more about
+	what each option means, see the section called "Internet Setup". Use setup.exe any time 
+	you want to update or install a Cygwin package. If you are installing Cygwin for a specific
+	purpose, use it to install the tools that you need. For example, if you want to compile
+	C++ programs, you need the gcc-g++ package and probably a text editor like nano.
+	When running setup.exe, clicking on categories and packages in the installation screen will
+	provide you with the ability to control what is installed or updated.
+
+	After installation, you can find Cygwin-specific documentation in the /usr/share/doc/Cygwin/ directory.
+
+	Developers coming from a Windows background will be able to write console or GUI executables
+	that rely on the Microsoft Win32 API instead of Cygwin using the mingw32 or mingw64 
+	cross-compiler toolchains. The --shared option to GCC allows to write Windows Dynamically Linked
+	Librarise(DLLs). The resource compiler windres is also provided.
+
+Quick Start Guide for those more experienced with UNIX
+
+	If you are an experienced UNIX user who misses a powerful command-line enviroment, 
+	you will enjoy Cygwin. Developers coming from a UINX background will find a set of utilities they are
+	already comfortable using, including a working UNIX shell. The compiler tools are the standard GNU 
+	compilers most people will have previously used under UNIX, only ported
+
+
+
+
+○Uninstall
+	1. 	If you have any Cygwin services running, remove by repeating the instractions in 
+		$(faq.html#faq.setup.uninstall-service) for all services that you installed.
+		Common services that might have been installed are, sshd, cron, cygserver, inted, 
+		apache, postgresql, and so on.
+
+	2.	Stop the X11 server if it is running, and terminate any Cygwin programs that might be running in
+		the background. Exit the command prompt and ensure that on Cygwin process remain.
+
+		Note:	If you want to save your mount points for a leter reinstall, first save the output of 
+				mount -m as described at $(MOUNT)
+
+				$(MOUNT)=$(HOST)/cygwin-ug-net/using-utils.html#mount
+
+	3.	If you installed cygisa.dll by running the shell script /usr/bin/cyglas-config as described in
+		$() then you need to configure Windows to stop using the LSA authentication package.
+		You do so by editing the registry and restoring $(REGISTRY-LSA) Packages back to it's original 
+		value of msv1_0, and then rebooting.
+
+
+	4.	Delete the Cygwin root folder and all subfolders.
+		If you get an error that an object is in use, then ensure that you've sstopped all services and
+		closed all Cygwin programs.
+		If you get a 'Permission Denied' error then you will need to modify the permissions and/or ownership of
+		the files or folders that are causing the error.
+		For example, sometimes files used by system services end up owned by the SYSTEM account and not 
+		writable by regular users.
+
+		The quickest way to delete the entire tree if you run into this problem is to change the 
+		ownership of all files and folders to your account.
+		To do this in Windows Explorer, right click on the root Cygwin folder, choose Properties,
+
+				

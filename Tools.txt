@@ -1,0 +1,21 @@
+
+Windows7(64bit)
+
+○仮想ドライブソフト
+	Microsoft
+	Virtual CD-ROM Control Panel
+	
+	http://www.microsoft.com/en-us/download/confirmation.aspx?id=38780
+
+○MSDNライブラリ2008
+	MSDN Library for Visual Studio 2008 SP1
+	http://www.microsoft.com/ja-jp/download/confirmation.aspx?id=20955
+
+○VisualStudio2008
+	Visual Studio 2008 Express Edtion with Service Pack 1 Combo DVD
+	http://go.microsoft.com/?LinkId=9348306
+	
+○.NET Framework
+
+○WindowsSDK
+

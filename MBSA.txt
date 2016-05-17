@@ -1,0 +1,22 @@
+
+
+MBSA(Microsoft Baseline Security Analyzer 2)
+
+
+	
+	> mbsacli.exe /xmlout /unicode /catalog $(cap_file) > result.xml
+
+
+	
+
+msu
+	> forfiles /p . /m*.msu /c "cmd /c wusa @path /quiet /norestart"
+
+
+exe
+	> forfiles /p . /m*.exe /c "cmd /c @path /quiet /norestart"
+
+
+cab
+	> forfiles /p . /m*.cab /c "cmd /c dism /online /add-package=@path /norestart"
+

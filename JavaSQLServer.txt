@@ -1,0 +1,54 @@
+
+
+JDBCドライバーによるSQLServerへの接続
+
+Microsoft SQL Server用JDBC Driverを使用して行う最も基本的な操作の１つは、
+SQL Serverデータベースへの接続を確立することです。
+データベースとのやり取りは、すべてSQLServerConnectionオブジェクトを介して行われます。
+JDBCドライバーのアーキテクチャは非常にフラットであるため、
+注目に値するほとんどすべての動作がSQLServerConnectionオブジェクトに関連します。
+
+SQL ServerがIPv6ポートのみで待機している場合は、
+SQL Serverへの接続にIPv4ではなくIPv6を使用するためにjava.net.preferIPv6Addressシステムプロパティを設定します。
+
+	System.setProperty( "java.net.preferIPv6Address", "true" );
+
+■接続URLの構築
+	SQL Serverデータベースに接続するための接続URLの作成方法について説明します。
+	SQL Serverデータベースの名前付きインスタンスへの接続についても説明します。
+
+
+■接続プロパティの設定
+	様々な接続プロパティについて、
+	およびSQL Serverデータベースに接続する際にそれらをどのように使用するかについて説明します。
+
+
+■データソースのプロパティの設定
+	Java Platform, Enterprise Edtion(Java EE)環境でデータソースを使用する方法について説明します。
+
+
+■接続の操作
+	SQL Serverデータベースへの接続をインスタンス化するための様々な方法について説明します。
+
+
+■接続プールの使用
+	JDBCドライバーが接続プールをサポートするしくみについて説明します。
+
+
+■データベースミラーリングの使用（JDBC）
+	JDBCドライバーがデータベースミラーリングの使用をサポートするしくみについて説明します。
+
+
+■高可用性、障害回復のためのJDBC Driverのサポート
+	AlwasyOn可用性グループに接続するアプリケーションの開発をサポートする仕組みについて説明します。
+
+
+■kerberos統合認証によるSQL Serverへの接続
+	kerberos統合認証を使用してSQL Serverデータベースに接続するアプリケーションのJava実装について説明します。
+
+
+■Windows Azure SQLデータベースへの接続
+
+
+
+

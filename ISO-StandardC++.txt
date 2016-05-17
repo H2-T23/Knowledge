@@ -1,0 +1,119 @@
+
+The Standard:C++
+
+The current ISO C++ standard is officially known as ISO International Standard ISO/IEC 
+
+Want to read the ISO C++ standard, or working drafts of the standard?
+You have several options, most of them free.
+
+several:Ç¢Ç≠Ç¬Ç©ÇÃ
+
+Where To Get the Current Standard
+
+	Purchase the C++ 14 offical standard(US$212, working on getting this down to $60).
+	You can purchase the offical C++ 11 standard at the ANSI Store.
+
+	Download the November 2011 working draft(free). 
+	Except only for the final standards/reports, all C+ committe documents are freely
+	publicly available, including all working drafts, many of which closely approximate 
+	the published standard. This working draft contains the C++ 14 standard plus minor editorial changes.
+
+purchase:çwì¸Ç∑ÇÈ
+except:èúÇ¢ÇΩÅAà»äO
+contain:ä‹Çﬁ
+
+Where To Get Working Drafts
+
+	Download a PDF of the current working draft(free).
+	This is the easiest way to get the latest prebuilt PDF. However, you can also...
+
+	Get working drafts at GitHub(free), plus version histroy, diffs, and more! 
+	The LaTeX source of the draft standard is being actively maintained publicly at GitHub.
+	Check out the repo to get the current snapshot, or any previous version in the history.
+
+prebuilt:pre+build
+
+FAQs
+
+Q: Why is the standard hard ot read? I'm having trouble learning C++ from reading it.
+	
+	Please note that the standard is not intended to teach how to use C++.
+	Rather, it is an internatonal treaty - a formal, legal, and sometmes 
+	mind-numbingly detailed technical document intended primarly for people writing C++
+	compilers and standard library implementations.
+
+	Fortunately, there are lost of good books that do teach how to use C++!
+	See thse recommendations as a starting pont for high-quality tutorial and reference information 
+	about how to learn and use C++.
+
+numbingly:ñ≥ä¥äo
+Rather:ÇﬁÇµÇÎ
+intended:åÃà”ÅAà”ê}Ç≥ÇÍÇΩ
+Fortunately:çKÇ¢Ç…
+
+Q: Why are the C++ working drafts freely available on GitHub when the standard must be purchased 
+	from ISO or another standards organiaztion?
+
+	ISO holds the copyright for all balloted drafts of the standard, as well as the standard itself.
+	The GitHub repo contains the incremental in-progress working source snapshots as they are edited, 
+	which are not the final standars.
+
+	The only documents that C++ committee permitted to provide freely are the final published standards.
+	The draft repository on GitHub dose not contain the final source for any published standards.
+	It contains interim working materials only, and those differ in their contents from the published standards.
+
+
+
+balloted:ìäï[Ç∑ÇÈ
+committee:àœàıâÔ
+permitted:ãñâ¬Ç∑ÇÈ
+interim:çáä‘ÅAébíËìIÇ»
+materials:éëçﬁ
+differ:àŸÇ»ÇÈ
+
+hard to read:ì«Ç›ìÔÇ¢
+
+
+
+Get Started!
+
+	1.Get a Compiler
+
+		Theree are good free C++ compilers available for all major OS platforms.
+		Download one that suits your platform:
+
+		[Gnu Compiler Collection]: Includes g++, a popular C++ compiler. A build for Windows is available here,
+		builds for other platforms are likely available via your platform's package manager, 
+		or you can build it yourself using instructions here.
+
+		[CLang]: A new open-source C++ compiler for various platforms.
+
+		[Visual C++ 2013 Express for Windows Desktop Apps and Windows 8.x Apps]: A free Windows C++ compiler by Microsoft.
+
+		[Oracle Solaris Studio C++ Compiler]: A C++ compiler for Solaris and some distributions of Linux, 
+		free for all commercial and non-commercial use.
+
+
+		Or try one of these onlin compiler pages, which offer a range of compilers including the latest from CLang, GCC, Intel,
+		and Microsoft. Some are compiler-only to let you check whether your code is legal, 
+		and some let you also run your test programs to see their output.
+
+			gcc.godbolt.org
+			Wandbox
+			Rise4Fun
+			Stacked-Crooked
+			rextester
+			idenoe.com
+
+	2. Take a Tour
+
+		Here are three great ways to get an overview of modern C++11 and C++14
+		- two for people who already know C++ and want to see what's new, and one that covers modern C++ end to end.
+
+
+		"What's new" in to minutes, If you already know C++ and want quick highligghts of what's new in C++, 
+		see Elements of Modern C++ Style by Herb Sutter for an overview of the most obvious and pervasively useful differences
+		in C++11 comparad to Classis C++98.(free)
+
+
+		
