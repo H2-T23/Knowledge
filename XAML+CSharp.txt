@@ -1,0 +1,26 @@
+#プロジェクトファイル
+##HogeProject.proj(UTF-8)
+	```
+	<?xml version+"1.0" encoding="utf-8" ?>
+	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+		DefultTargets="Make">
+		<Target Name="Make">
+			<Exec Command="csc Hoge.cs" />
+		</Target>
+		<Target Name="Run">
+			<Exec Command="Hoge" />
+			<Message Text="実行しました" />
+		</Target>
+		<Target Name="Clean">
+			<Delete Files="Hoge.exe" />
+			<Message Text="クリーンアップ完了" />
+		</Target>
+	</Project>
+	`
+##MSBUILDコマンド
+	```
+	msbuild /t:Make
+	msbuild /t'Run
+	msbuild /t:Clean
+	`
+

@@ -1,0 +1,31 @@
+# MSBuild Reference h1
+## MSBuild Project File Schema Reference
+	MSBuildファイル形式を構成するXML要素の概要
+## MSBuild Task Reference
+	MSBuildに付属する一般的なタスクについて
+## MSBuild Conditions
+	MSBuildファイルを使用できる条件について
+## MSBuild Conditional Constructs
+	Choose要素、When要素およびOtherwise要素の使用方法
+## MSBuild Reserved and Well-Known Properties
+	MSBuildの予約済みのプロパティについて
+## Common MSBuild Proejct Properties
+## Common MSBuild Project Items
+## MSBuild Command-Line Reference
+## MSBuild .Targets Files
+## MSBuild Well-known Item Metadata
+## MSBuild Response Files
+## Additional Resources for MSBuild
+## WPF MSBuild Reference
+## Special Characters to Escape
+	状況によって、正しく解釈される為にｒ
+
+
+
+
+
+
+
+
+
+
